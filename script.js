@@ -30,7 +30,7 @@ setInterval(function(){
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     var blockTop = parseInt(window.getComputedStyle(block).getPropertyValue("top"));
     if(characterLeft==blockLeft && blockTop<500 && blockTop>300){
-        text("Game over. Score: " + counter);
+        alert("Game over. Score: " + counter);
         block.style.animation = "none";
     }
 },1);
